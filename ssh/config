@@ -1,36 +1,36 @@
 # ~/.ssh/config
 
-Host walnut walnut.lefrique.name
-    ForwardX11 yes
-
-Host plum plum.lefrique.name
-    User joude
-    ForwardX11 yes
-
-Host larch.lefrique.name
-    HostName home.lefrique.name
-    HostKeyAlias larch.lefrique.name
-
-Host *.lefrique.name !larch.lefrique.name
-    # A netcat-like option is now available.
-    ProxyCommand ssh -ax larch.lefrique.name -W `echo %h | cut -d. -f1`:%p
-
-Host *.marvell.com
-    User lefrique
-
-Host raspberry raspberry.lefrique.name
-    User pi
-
-Host tizen review.tizen.org
-    Hostname review.tizen.org
-    User lefrique
-    Port 29418
-
-Host *.* localhost
-    ProxyCommand none
-
+#Host walnut walnut.lefrique.name
+#    ForwardX11 yes
+#
+#Host plum plum.lefrique.name
+#    User joude
+#    ForwardX11 yes
+#
+#Host larch.lefrique.name
+#    HostName home.lefrique.name
+#    HostKeyAlias larch.lefrique.name
+#
+#Host *.lefrique.name !larch.lefrique.name
+#    # A netcat-like option is now available.
+#    ProxyCommand ssh -ax larch.lefrique.name -W `echo %h | cut -d. -f1`:%p
+#
+#Host *.marvell.com
+#    User lefrique
+#
+#Host raspberry raspberry.lefrique.name
+#    User pi
+#
+#Host tizen review.tizen.org
+#    Hostname review.tizen.org
+#    User lefrique
+#    Port 29418
+#
+#Host *.* localhost
+#    ProxyCommand none
+#
 Host *
-    User jlefrique
+    User nhedberg
     ForwardAgent yes
     ControlMaster auto
-    ControlPath /tmp/ssh_mux_jlefrique_%h_%p_%r
+    ControlPath /tmp/ssh_mux_nhedberg_%h_%p_%r

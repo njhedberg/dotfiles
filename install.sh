@@ -4,7 +4,7 @@ set -x
 set -e
 
 GIT=$(which git)
-REPOSITORY="git://github.com/jlefrique/dotfiles.git"
+REPOSITORY="git://github.com/njhedberg/dotfiles.git"
 
 BASE_PATH="$HOME"
 DOTFILES="$BASE_PATH/dotfiles"

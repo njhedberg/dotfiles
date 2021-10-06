@@ -34,7 +34,7 @@ usb-serial converters
 
 To access /dev/ttyUSBx, add your user to the group dialout:
 
-    sudo adduser jlefrique dialout
+    sudo adduser nhedberg dialout
 
 
 LaTeX packages
