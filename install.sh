@@ -12,11 +12,7 @@ BIN="$BASE_PATH/bin"
 
 FILES="\
 Xresources
-dmenurc
 gitconfig
-hgrc
-mailcap
-muttrc
 signature
 tmux.conf
 vimrc
@@ -29,12 +25,11 @@ kermrc"
 FOLDERS="\
 config
 ssh
-mutt
 xmonad
 vim
 xrdb
-zsh
-mplayer"
+zsh"
+
 
 [ -f "$GIT" ] || $(echo "Please install git." && exit 1)
 
