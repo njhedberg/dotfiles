@@ -37,6 +37,7 @@ zsh"
 if [ -d "$DOTFILES" ]; then
     pushd "$DOTFILES" > /dev/null
     $GIT pull --recurse-submodules origin master
+    $GIT submodule update --init --recursive
     popd > /dev/null
 else
     $GIT clone --recursive "$REPOSITORY" "$DOTFILES"

@@ -39,6 +39,7 @@ if [ `dpkg -S $FONT | wc -l` -ne 0 ]; then
     echo "Font $FONT found"
 else
     red "Font $FONT missing"
+    red "try: sudo apt install xfonts-terminus"
 fi
 
 ##
